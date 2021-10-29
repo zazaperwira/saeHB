@@ -119,7 +119,7 @@ Beta <- function(formula, iter.update=3, iter.mcmc=2000, thin = 1, burn.in =1000
       }
 
       phi.a = result_samps$statistics[2+nvar+n,1]^2/result_samps$statistics[2+nvar+n,2]^2
-      phi.a = result_samps$statistics[2+nvar+n,1]/result_samps$statistics[2+nvar+n,2]^2
+      phi.b = result_samps$statistics[2+nvar+n,1]/result_samps$statistics[2+nvar+n,2]^2
       tau.ua = result_samps$statistics[3+nvar+n,1]^2/result_samps$statistics[3+nvar+n,2]^2
       tau.ub = result_samps$statistics[3+nvar+n,1]/result_samps$statistics[3+nvar+n,2]^2
 
@@ -217,7 +217,7 @@ Beta <- function(formula, iter.update=3, iter.mcmc=2000, thin = 1, burn.in =1000
         tau.b[i] = 1/(beta[i,2]^2)
       }
       phi.a = result_samps$statistics[2+nvar+n,1]^2/result_samps$statistics[2+nvar+n,2]^2
-      phi.a = result_samps$statistics[2+nvar+n,1]/result_samps$statistics[2+nvar+n,2]^2
+      phi.b = result_samps$statistics[2+nvar+n,1]/result_samps$statistics[2+nvar+n,2]^2
       tau.ua = result_samps$statistics[3+nvar+n,1]^2/result_samps$statistics[3+nvar+n,2]^2
       tau.ub = result_samps$statistics[3+nvar+n,1]/result_samps$statistics[3+nvar+n,2]^2
     }
